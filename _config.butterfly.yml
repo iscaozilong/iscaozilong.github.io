@@ -1,0 +1,231 @@
+# ============================================
+# Butterfly 主题自定义配置
+# ============================================
+
+# ---- 导航栏 ----
+nav:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-heart
+
+# ---- 社交链接 ----
+social:
+  fab fa-github: https://github.com/iscaozilong || Github || '#24292e'
+
+# ---- 头像 ----
+avatar:
+  img: /img/butterfly-icon.png
+  effect: true
+
+# ---- 首页副标题 ----
+subtitle:
+  enable: true
+  effect: true
+  source: false
+  sub:
+    - 写代码，写生活
+    - 热爱技术，分享快乐
+    - 欢迎来到我的小站 🌟
+
+# ---- 首页文章布局 ----
+index_layout: 3
+index_post_content:
+  method: 2
+  length: 300
+
+# ---- 代码块 ----
+code_blocks:
+  theme: darker
+  macStyle: true
+  copy: true
+  language: true
+  shrink: false
+  fullpage: false
+
+# ---- 文章目录 ----
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+# ---- 暗色模式 ----
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1
+
+# ---- 滚回顶部显示进度 ----
+rightside_scroll_percent: true
+
+# ---- 页面进入动画 ----
+enter_transitions: true
+
+# ---- 网站背景 ----
+background:
+
+# ---- 底部 ----
+footer:
+  owner:
+    enable: true
+    since: 2025
+  copyright:
+    enable: true
+    version: true
+
+# ---- 侧边栏 ----
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: 一个热爱技术的开发者
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 关注我
+      link: https://github.com/iscaozilong
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的博客 🎉
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 40
+    color: true
+    orderby: random
+    order: 1
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+
+# ============================================
+# 🎆 炫酷特效配置
+# ============================================
+
+# ---- 加载动画 ----
+preloader:
+  enable: true
+  source: 1
+
+# ---- Canvas 粒子网络背景 ----
+canvas_nest:
+  enable: true
+  color: '0,150,255'
+  opacity: 0.5
+  zIndex: -1
+  count: 99
+  mobile: true
+
+# ---- 点击烟花特效 ----
+fireworks:
+  enable: true
+  zIndex: 9999
+  mobile: true
+
+# ---- 点击爱心特效 ----
+click_heart:
+  enable: true
+  mobile: true
+
+# ---- 打字炫酷特效 ----
+activate_power_mode:
+  enable: true
+  colorful: true
+  shake: true
+  mobile: false
+
+# ---- 页面圆角 ----
+rounded_corners_ui: true
+
+# ---- 文章底部分隔线 ----
+hr_icon:
+  enable: true
+
+# ---- 文章版权信息 ----
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# ---- 相关文章 ----
+related_post:
+  enable: true
+  limit: 6
+  date_type: created
+
+# ---- 文章分页 ----
+post_pagination: 1
+
+# ---- 文章字数统计 ----
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# ---- 访客统计 ----
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# ---- Canvas 飘带背景 ----
+canvas_fluttering_ribbon:
+  enable: false
+  mobile: false
+
+# ---- Canvas 彩带 ----
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+  mobile: false
+
+# ---- 图片灯箱 ----
+lightbox: fancybox
+
+# ---- 评论系统 (不开启) ----
+comments:
+  use:
+  text: true
+  lazyload: false
+  count: false
+
+# ---- 搜索 (本地搜索) ----
+search:
+  use: local_search
+  placeholder: 搜索文章...
+  local_search:
+    preload: true
+    top_n_per_article: 1
+    unescape: false
