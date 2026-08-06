@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # 在仓库根目录运行。由 cron fresh session 提供日报正文：
-#   REPORT_BODY_FILE=/tmp/report.md ./scripts/publish-daily-report.sh
+#   REPORT_BODY_FILE=/tmp/report.md ./tools/publish-daily-report.sh
 # 正文为空或仅空白时安全退出，不创建 commit。
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
