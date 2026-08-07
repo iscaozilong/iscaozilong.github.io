@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+env:
+  TZ: Asia/Shanghai
+
 permissions:
   contents: read
   pages: write
