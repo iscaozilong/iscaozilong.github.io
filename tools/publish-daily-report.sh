@@ -8,7 +8,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 export TZ="Asia/Shanghai"
-TODAY="$(date +%F)"
+TODAY="$(date -d 'yesterday' +%F)"
 POST_PATH="source/_posts/daily-${TODAY}.md"
 BODY_FILE="${REPORT_BODY_FILE:-}"
 
@@ -55,7 +55,7 @@ print(f"已生成：{path}")
 PY
 
 # 只在内容确实新增时继续；构建失败不会产生提交。
-if git diff --quiet -- "$POST_PATH"; then
+if git diff --quiet -- "$POST_PATH" && git diff --cached --quiet -- "$POST_PATH" && git ls-files --error-unmatch "$POST_PATH" >/dev/null 2>&1; then
   echo "没有新的日报变更，跳过提交。"
   exit 0
 fi
